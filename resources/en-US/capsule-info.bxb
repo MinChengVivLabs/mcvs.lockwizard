@@ -1,0 +1,13 @@
+capsule-info {
+  display-name (Luck Wizard)
+  developer-name (Min (Required))
+  description ("Example of how capsule locks works in different devices. Lock Wizard is less recognizable in ASR, so let it be Luck Wizard.")
+  dispatch-name (Luck Wizard)
+  // Set your own image for your capsule's icon
+  icon-asset (images/icons/icon.png)
+  search-keywords {
+    keyword ("capsule lock")
+    keyword ("market place")
+    keyword ("bixby developer tool")
+  }
+}

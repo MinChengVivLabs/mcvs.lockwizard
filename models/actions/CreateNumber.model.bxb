@@ -1,0 +1,17 @@
+action (CreateNumber) {
+  description (Create a single number or a list of number)
+  type (Constructor)
+  collect {
+    input (aaa) {
+      type (IntNumber)
+      min (Required) max (Many) 
+      default-init {
+        intent {
+          goal: IntNumber
+          value: IntNumber(77)
+        }
+      }
+    }
+  }
+  output (StructA)
+}

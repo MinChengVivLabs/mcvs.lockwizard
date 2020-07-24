@@ -1,0 +1,113 @@
+result-view {
+  match: StructA (this) 
+  message {
+    if (size(this)==1) {
+      template ("This is a result view of single item") 
+    }
+    else-if (size(this)>1) {
+      template ("This is a result view of list items") 
+    }
+    else {
+      template ("This is a result view of empty result")
+    }
+  }
+    // render {
+    //   list-of (this) {
+    //     where-each (item) {
+    //       title-card {
+    //         title-area {
+    //           slot2 {
+    //             single-line {
+    //               text {
+    //                 value {
+    //                   template ("Integer: #{value(item.number)}")
+    //                 }
+    //                 style (Detail_L)
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }          
+    //     }
+    //   }
+    // }
+  render {
+    if ($handsFree) {
+      list-of (this) {
+        navigation-mode {
+          read-one-and-next {
+            list-summary {
+              template ("It is hands free!")
+            }
+            page-content (page) {
+              page-marker {
+                if (size(page) >= 1) {
+                  if (isFirstNavPage(page)) {
+                    template ("The first solution is")
+                  } else-if (isLastNavPage(page)){
+                    template("The last solution is")
+                  } else {
+                    template("The next solution is")
+                  }
+                }
+              }
+                underflow-statement { template (first-candidate) }
+                next-item-question { template ("want to hear the next one?") }
+                overflow-statement { template (thats-all) }
+                overflow-question { template (what-do-you-want-to-do) }
+            }
+          }
+        }
+        where-each (item) {
+          title-card {
+          title-area {
+            slot2 {
+              single-line {
+                text {
+                  value {
+                    template ("Integer: #{value(item.number)}")
+                  }
+                  style (Detail_L)
+                }
+              }
+            }
+          }
+          }
+          spoken-summary("Integer: #{value(item.number)}")
+        }
+      }
+    }
+    layout {
+      section {
+        title {
+          template ("Voice command Add One")
+        }
+        content {
+          for-each (this) {
+            as (item) {
+              title-card {
+                title-area {
+                  slot2 {
+                    single-line {
+                      text {
+                        value {
+                          template ("Integer: #{value(item.number)}")
+                        }
+                        style (Detail_L)
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  conversation-drivers {
+    conversation-driver {
+      template ("Add one")
+    }
+  }
+}

@@ -1,0 +1,11 @@
+result-view {
+  match: StructD(this)
+  // message: template ("Agent #{value(this.id)} is now known as the #{value(this.codeName)}")
+  message {
+    template-macro (dialog-structD) {
+      param (id) {expression (this.id)}
+      param (code) {expression (this.codeName)}
+      param (surfix) {expression (this.surfix)}
+    }
+  }
+}

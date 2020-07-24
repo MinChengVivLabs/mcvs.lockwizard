@@ -1,0 +1,12 @@
+action (AddOne) {
+  description (__DESCRIPTION__)
+  type (Calculation)
+  collect {
+    input (aaa) {
+      type (StructA)
+      min (Required) max (Many)
+      // no default-init to trigger input-view
+    }
+  }
+  output (StructA)
+}

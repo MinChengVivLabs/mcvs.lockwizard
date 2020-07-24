@@ -1,0 +1,10 @@
+train (t-3srax978iyv63xqlf1tjeuwfm) {
+  utterance ([g:CreateStructC] test follow up)
+  plan (Y2BmEM9NLivWy8lPzi7PrEosStELLikqTS5xZpBFl3AuSk0sSYVJS6BLh6RWlPgl5qYyMDEwAjEDkGRkYIDRAA==)
+  last-modified (1595357953438)
+}
+train (t-3zbpbdyj8ar3857s24653necm) {
+  utterance ("[g:CreateNumber] test result view with (78)[v:IntNumber]")
+  plan (Y2BmEM9NLivWy8lPzi7PrEosStELLikqTS5xZJBBl3AuSk0sSfUrzU1KLWKQRJf1zCuBSjExMAIxA5BkZAABKB8A)
+  last-modified (1595357953351)
+}

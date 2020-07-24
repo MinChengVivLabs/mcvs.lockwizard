@@ -1,0 +1,10 @@
+train (t-90kz55nlfhic8higb57bioxer) {
+  utterance ("[g:StructA:prompt] (88)[v:IntNumber]")
+  plan (Y2BmEM9NLivWy8lPzi7PrEosStELLikqTS5xZJBBl3AuSk0sSfUrzU1KLWKQRJf1zCuBSjExMAIxA5BkZAABJggGAA==)
+  last-modified (1595357953679)
+}
+train (t-9fhjtdd1frvx2usrmihkehl7q) {
+  utterance ([g:StructA:prompt,r:InputDefault] default)
+  plan (Y2BiEM9NLivWy8lPzi7PrEosStELLikqTS5xZJBBl/DMKygtcUlNSyzNKWFgBEIGMGaC0AA=)
+  last-modified (1595610323877)
+}

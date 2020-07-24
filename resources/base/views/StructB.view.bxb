@@ -1,0 +1,80 @@
+result-view {
+  match: StructB(this)
+  message {
+    template ("Now viewing structure B") 
+  }
+  render {
+    if ($handsFree) {
+      list-of (this.number) {
+        navigation-mode {
+          read-one-and-next {
+            list-summary {
+              template ("It is hands free!")
+            }
+            page-content (page) {
+              page-marker {
+                if (size(page) >= 1) {
+                  if (isFirstNavPage(page)) {
+                    template ("The first solution is")
+                  } else-if (isLastNavPage(page)){
+                    template("The last solution is")
+                  } else {
+                    template("The next solution is")
+                  }
+                }
+              }
+                underflow-statement { template (first-candidate) }
+                next-item-question { template ("want to hear the next one?") }
+                overflow-statement { template (thats-all) }
+                overflow-question { template (what-do-you-want-to-do) }
+            }
+          }
+        }
+        where-each (item) {
+          title-card {
+          title-area {
+            slot2 {
+              single-line {
+                text {
+                  value {
+                    template ("Integer: #{value(item)}")
+                  }
+                  style (Detail_L)
+                }
+              }
+            }
+          }
+          }
+          spoken-summary("Integer: #{value(item)}")
+        }
+      }
+    }
+    layout {
+      section {
+        title {
+          template ("Voice command Add One")
+        }
+        content {
+          for-each (this) {
+            as (item) {
+              title-card {
+                title-area {
+                  slot2 {
+                    single-line {
+                      text {
+                        value {
+                          template ("Integer: #{value(item.number)}")
+                        }
+                        style (Detail_L)
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

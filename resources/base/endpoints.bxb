@@ -1,0 +1,37 @@
+endpoints {
+  action-endpoints {
+    // Uncomment the lines below and enter the information for actions, inputs, and the appropriate local or remote endpoints
+    action-endpoint (CreateNumber) {
+      accepted-inputs (aaa)
+      local-endpoint (CreateNumber.js)
+    }
+    action-endpoint (AddOne) {
+      accepted-inputs (aaa)
+      local-endpoint (AddOne.js)
+    }
+    action-endpoint (CreateTextCode) {
+      accepted-inputs ()
+      local-endpoint (CreateTextCode.js)
+    }
+    action-endpoint (CreateStructB) {
+      accepted-inputs ()
+      local-endpoint (CreateStructB.js) 
+    }
+
+    action-endpoint (CreateStructC) {
+      accepted-inputs (order) 
+      local-endpoint (CreateStructC.js)
+    }
+    action-endpoint (SupersizeMe) {
+      accepted-inputs (structC)
+      local-endpoint (SupersizeMe.js)
+    }
+
+    // action-endpoint (__ACTION_NAME__) {
+    //   accepted-inputs (__LIST_OF_ACTION_INPUTS__)
+    //   remote-endpoint (__ENDPOINT_URL__) {
+    //     method (__HTTP_METHOD_USED__)
+    //   }
+    // }
+  }
+}

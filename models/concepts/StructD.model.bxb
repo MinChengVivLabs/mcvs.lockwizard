@@ -1,0 +1,15 @@
+structure (StructD) {
+  description (this is used to test selection input)
+  property (id) {
+    type (IntNumber)
+    min (Required) max (One)
+  }
+  property (codeName) {
+    type (TextCode)
+    min (Required) max (One)
+  }
+  property (surfix) {     // no use, only to test template-marco-def for Zendesk #4475
+    type (Supersize)
+    min (Optional) max (One)
+  }
+}

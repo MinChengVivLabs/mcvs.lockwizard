@@ -1,0 +1,11 @@
+structure (StructC) {
+  description (for follow up test)
+  property (order) {
+    type (TextName)
+    min (Required) max (One)
+  }
+  property (supersize) {
+    type (Supersize) 
+    min (Required) max (One)  // fixed number 0 -> 33 -> 66 -> 99
+  }
+}

@@ -1,0 +1,20 @@
+template-macro-def (dialog-structD) {
+  params {
+    param (id){ type (IntNumber)}
+    param (code) {type(TextCode)}
+    param (surfix) {type (Supersize)}
+  }
+  content {
+    if (exists(id) && exists(code)) {
+      if (exists(surfix)) {
+        template ("#{value(id)} is the #{value(surfix)}% supersized #{value(code)}")
+      }
+      else {
+        template ("#{value(id)} is now known as the #{value(code)}")
+      }
+    }
+    else {
+      template ("template dialog-structD failed")
+    }
+  }
+}

@@ -1,0 +1,13 @@
+action (InputDefault) {
+  description (to test CD on input view)
+  type (Constructor)
+  collect {
+  }
+  output (StructA) {
+    evaluate {
+      StructA {
+        number {IntNumber(777)}
+      }
+    }
+  }
+}

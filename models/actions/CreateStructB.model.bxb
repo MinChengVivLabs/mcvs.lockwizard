@@ -1,0 +1,7 @@
+action (CreateStructB) {
+  description (__DESCRIPTION__)
+  type (Search)
+  collect {
+  }
+  output (StructB)
+}

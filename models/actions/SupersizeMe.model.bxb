@@ -1,0 +1,16 @@
+action (SupersizeMe) {
+  description (increase one level of supersize)
+  type (Calculation)
+  collect {
+    input (structC) {
+      type (StructC)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: CreateStructC
+        }
+      }
+    }
+  }
+  output (StructC)
+}

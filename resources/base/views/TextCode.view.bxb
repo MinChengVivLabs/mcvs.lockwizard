@@ -1,0 +1,72 @@
+result-view {
+  match: TextCode(this)
+  message: template ("Your secret code") 
+  render {
+    if ($handsFree) {
+      list-of (this) {
+        navigation-mode {
+          read-one-and-next {
+            list-summary {
+              template ("It is hands free!")
+            }
+            page-content (page) {
+              page-marker {
+                if (size(page) >= 1) {
+                  if (isFirstNavPage(page)) {
+                    template ("The first code is")
+                  } else-if (isLastNavPage(page)){
+                    template("The last code is")
+                  } else {
+                    template("The next code is")
+                  }
+                }
+              }
+                underflow-statement { template (first-candidate) }
+                next-item-question { template ("want to hear the next one?") }
+                overflow-statement { template (thats-all) }
+                overflow-question { template (what-do-you-want-to-do) }
+            }
+          }
+        }
+        where-each (item) {
+          title-card {
+          title-area {
+            slot2 {
+              single-line {
+                text {
+                  value {
+                    template ("Code: #{value(item)}")
+                  }
+                  style (Detail_L)
+                }
+              }
+            }
+          }
+          }
+          spoken-summary("Code: #{value(item)}")
+        }
+      }
+    }
+    else {
+      list-of (this) {
+        where-each (item) {
+          title-card {
+          title-area {
+            slot2 {
+              single-line {
+                text {
+                  value {
+                    template ("Your Code: #{value(item)}")
+                  }
+                  style (Detail_L)
+                }
+              }
+            }
+          }
+          }
+          spoken-summary("Your Code: #{value(item)}")
+        }
+      }
+    }
+  }
+}

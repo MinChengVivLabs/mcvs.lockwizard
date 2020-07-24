@@ -1,0 +1,7 @@
+structure (StructA) {
+  description (Test result view)
+  property (number) {
+    type (IntNumber)
+    min (Required) max (One)
+  }
+}

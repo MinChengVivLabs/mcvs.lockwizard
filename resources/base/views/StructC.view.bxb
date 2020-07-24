@@ -1,0 +1,36 @@
+result-view {
+  match: StructC(this)
+  // this is always a single result view, so let's nor worry about >1 
+  message {
+    if (this.supersize==0) {
+      template ("Here is your order of regular #{value(this.order)}") 
+    }
+    else {
+      template ("Wise choice, here is your #{value(this.supersize)}% supersized #{value(this.order)}")
+    }
+  }
+  render {
+    layout {
+      section {
+        title: template ("#{value(this.order)} with #{value(this.supersize)}% supersized")
+      }
+    }
+  }
+  followup {
+    if (this.supersize<99) {
+      prompt {
+        dialog ("How about supersize me at no additional cost?")
+        on-confirm {
+          // message("Great decision!")
+          intent {
+            goal: SupersizeMe
+            value: $expr(this)
+          }
+        }
+        on-deny {
+          message("OK, your loss")
+        }
+      }
+    }
+  }
+}

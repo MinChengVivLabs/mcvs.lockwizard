@@ -1,0 +1,31 @@
+action (CreateStructD) {
+  description (agent id from input of default, code name from selection)
+  type(Constructor)
+  collect {
+    input (id) {
+      type (IntNumber)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: IntNumber
+          value: IntNumber(777)
+        }
+      }
+    }
+    input (codeName) {
+      type (TextCode) 
+      min (Required) max (One)
+      default-init {
+        intent: goal: CreateTextCode
+      }
+    }
+  }
+  output (StructD) {
+    evaluate {
+      StructD {
+        id {.$expr(id) }
+        codeName {.$expr(codeName)}
+      }
+    }
+  }
+}

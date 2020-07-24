@@ -1,0 +1,4 @@
+dialog (Result) {
+  match: StructA(this)
+  template("In result dialog")
+}

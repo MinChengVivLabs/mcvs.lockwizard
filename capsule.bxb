@@ -1,0 +1,26 @@
+capsule {
+  id (mcvs.lockwizard)
+  version (0.1.4)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+    target (bixby-watch-en-US)
+    target (bixby-fridge-en-US)
+  }
+  runtime-version (7) {
+    overrides {
+      // allow-dialogs-on-detail-pages (true)
+      no-fallback-dialog-in-views (false)
+      // auto-on-click-for-list-of (true)
+    }
+  }
+  store-countries {
+    all
+  }
+  device-models {
+    all
+  }
+  store-sections {
+    section (Utilities)
+  }
+}

@@ -1,0 +1,10 @@
+train (t-r2ey3eujnypf5y6h90255ml4t) {
+  utterance ([g:AddOne:continue:StructA] Add one)
+  plan (Y2BmEM9NLivWy8lPzi7PrEosStELLikqTS5xZBBDl3BMSfHPS8WtgYmBEYgZgCQjAwOMBgA=)
+  last-modified (1595357953957)
+}
+train (t-rt3j5le2yotz7woshz8mnkmq5) {
+  utterance ([g:CreateStructD] test selection input view)
+  plan (Y2BhEM9NLivWy8lPzi7PrEosStELLikqTS5xYZBFl3AuSk0sSYVJS6JLe+aV+JXmJqUWMUigS4WkVpQ456ekMjAzMDIwAUkGIA2CEABmAQA=)
+  last-modified (1595357953833)
+}

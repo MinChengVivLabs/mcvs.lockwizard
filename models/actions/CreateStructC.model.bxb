@@ -1,0 +1,17 @@
+action (CreateStructC) {
+  description (create an order)
+  type(Constructor)
+  collect {
+    input (order) {
+      type (TextName) 
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: TextName
+          value: TextName("Big mac")
+        }
+      }
+    }
+  }
+  output (StructC)
+}

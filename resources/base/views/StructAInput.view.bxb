@@ -1,0 +1,26 @@
+input-view {
+  match: StructA (this)
+  message {
+    template ("This is input view, say an integar or say default.") 
+  }
+  render {
+    form {
+      elements {
+        number-input {
+          id (aaa) 
+          type (IntNumber)
+          label("Input Integar")
+        }
+      }
+      on-submit {
+        goal: CreateNumber
+        value: viv.core.FormElement(aaa)
+      }
+    }
+  }
+  conversation-drivers {
+    conversation-driver {
+      template ("Default")
+    }
+  }
+}

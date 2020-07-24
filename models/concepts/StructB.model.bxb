@@ -1,0 +1,7 @@
+structure (StructB) {
+  description (__DESCRIPTION__)
+  property (number) {
+    type (IntNumber)
+    min (Required) max (Many)
+  }
+}
