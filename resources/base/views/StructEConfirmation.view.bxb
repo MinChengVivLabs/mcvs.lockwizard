@@ -1,0 +1,22 @@
+confirmation-view {
+  match {
+    BoolConfirm {
+      confirming {
+        FakeStructE (action)
+      }
+    }
+  }
+  message: template ("Confirm your blind purchase") 
+  mode (PositiveEmphasis)
+  // Confirming with a `value: Confirmation(true)` doesn't work without this block. DO NOT remove confirm-options.
+  // I don't know what this is, just keep it
+  confirm-options {
+    on-confirm {
+      if (false) {
+        halt {
+          dialog ("Don't be shy.")
+        }
+      }
+    }
+  }
+}

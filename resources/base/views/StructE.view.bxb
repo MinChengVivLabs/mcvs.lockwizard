@@ -1,0 +1,4 @@
+result-view {
+  match: StructE(this) 
+  message: template ("You bought a #{value(this.itemName)} with #{value(this.itemPrice)} gil.")
+}

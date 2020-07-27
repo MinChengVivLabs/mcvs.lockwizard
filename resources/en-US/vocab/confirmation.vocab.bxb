@@ -1,0 +1,22 @@
+vocab(BoolConfirm) {
+  "true" {
+    "Confirm"
+    "Confirm it"
+    "Yes"
+    "Yep"
+    "Yeah"
+    "Yup"
+    "Request a quote"
+    "Request"
+    "Get a quote"
+    "Go"
+    "do it"
+  }
+  "false" {
+    "No"
+    "Nope"
+    "Cancel"
+    "Don't do it"
+    "Do not do it"  
+  }
+}

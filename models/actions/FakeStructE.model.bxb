@@ -1,0 +1,17 @@
+action (FakeStructE) {
+  description (dummy StructE)
+  type (Commit)
+  confirm {
+    by (BoolConfirm)
+  }
+  collect {
+  }
+  output (StructE) {
+    evaluate {
+      StructE {
+        itemName {TextName("potion")}
+        itemPrice {IntNumber(100)}
+      }
+    }
+  }
+}

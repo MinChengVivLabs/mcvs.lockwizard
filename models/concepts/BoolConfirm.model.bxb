@@ -1,0 +1,4 @@
+boolean (BoolConfirm) {
+  description (I don't know why need this, but just follow the example)
+  extends (viv.core.Boolean)
+}

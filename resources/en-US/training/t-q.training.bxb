@@ -1,3 +1,8 @@
+train (t-q1izc9y4i8y52l0r7zvuqo6qm) {
+  utterance ([g:FakeStructE] test confirmation view)
+  plan (Y2BiEM9NLivWy8lPzi7PrEosStELLikqTS5xZZBGl3BLzE6FSTICIQMUA0kA)
+  last-modified (1595612461273)
+}
 train (t-ql6lylywkqyyxy5jn0krpgb0d) {
   utterance ([g:CreateTextCode] test selection result view)
   plan (Y2BikMhNLivWy8lPzi7PrEosStELSa0occ5PSWWQQ5dxLkpNLEmFyzMCIQMUA0kA)

@@ -7,13 +7,12 @@
 
 ## TextCode is used to test voice selection of result-view list items
 1. default "first one", "third one", "last one" etc should work
-2. custome training such as "default" should also work 
-3. utterance "test selection result view"
+2. utterance "test selection result view"
 
 ## StructA is also used to test input prompt 
 1. support text field input
 2. support voice input
-3. support conversation driver TODO 
+3. support conversation driver, utterance "default" after input promt
 4. utterance "test input view" 
 
 ## StructD is used to test input promt with selection
@@ -28,9 +27,11 @@ It should be ok or recommend to later remove StructB and related view models
 1. followup without conversation driver
 2. utterance "test follow up [double warpper]" 
 
-## TODO: add confirmation view test, 2nd version
+## StructE is used for confirmation view test (for lock purpose only)
+1. This is not a complete transcation, although StructE maybe re-used for that purpose later
+2. utterance "test confirmation view" 
 
-## TODO: add a test for basic audio player, 2nd version
+## TODO: add a test for basic audio player, 3nd version
 NO need to be fancy, just play a default sound is fine
 
 ## TODO: add a test for basic video player, 3rd version

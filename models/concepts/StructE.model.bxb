@@ -1,0 +1,12 @@
+structure (StructE) {
+  description (item and price)
+  property (itemName) {
+    type (TextName)
+    min (Required) max (One)
+  }
+  property (itemPrice) {
+    type (IntNumber)
+    min (Required) max (One)
+  }
+}
+

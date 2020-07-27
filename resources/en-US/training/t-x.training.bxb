@@ -1,0 +1,5 @@
+train (t-xyqb0fq2c3omem84e4fpc8w2l) {
+  utterance ("[g:BoolConfirm:prompt] (yes)[v:BoolConfirm:true]")
+  plan (Y2BikM5NLivWy8lPzi7PrEosStFzys/Pcc7PS8ssysUvyQiEDAw8QMwExEA2AA==)
+  last-modified (1595872081598)
+}
