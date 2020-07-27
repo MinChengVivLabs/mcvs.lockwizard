@@ -1,7 +1,7 @@
 input-view {
   match: StructA (this)
   message {
-    template ("This is input view, say an integar or say default.") 
+    template ("This is input view, say an integer or say default.") 
   }
   render {
     form {
@@ -9,7 +9,7 @@ input-view {
         number-input {
           id (aaa) 
           type (IntNumber)
-          label("Input Integar")
+          label("Input Integer")
         }
       }
       on-submit {
