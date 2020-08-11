@@ -1,0 +1,7 @@
+action (BuildAudio) {
+  description (__DESCRIPTION__)
+  type (Constructor)
+  collect {
+  }
+  output (audioPlayer.AudioInfo)
+}

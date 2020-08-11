@@ -1,7 +1,7 @@
 hints {
   uncategorized {
-    hint (Ask Luck Wizard to test input view)
-    hint (Ask Luck Wizard to test result view with 45)
-    hint (Ask Luck Wizard to test result view with 45 and 88)
+    hint (Ask Lock Wizard to test input view)
+    hint (Ask Lock Wizard to test result view with 45)
+    hint (Ask Lock Wizard to test result view with 45 and 88)
   }
 }
