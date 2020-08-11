@@ -31,10 +31,10 @@ It should be ok or recommend to later remove StructB and related view models
 1. This is not a complete transcation, although StructE maybe re-used for that purpose later
 2. utterance "test confirmation view" 
 
-## TODO: add a test for basic audio player, 3nd version
+## TODO: add a test for basic audio player, 3rd version
 NO need to be fancy, just play a default sound is fine
 
-## TODO: add a test for basic video player, 3rd version
+## TODO: add a test for basic video player, later version
 
 ## TODO: add test transcation, later if required
 

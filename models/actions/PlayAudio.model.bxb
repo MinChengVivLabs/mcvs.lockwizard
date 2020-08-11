@@ -1,0 +1,32 @@
+action (PlayAudio) {
+  description (__DESCRIPTION__)
+  type (Search)
+  collect {
+    input (track) {
+      type (audioPlayer.AudioInfo)
+      min (Required) max (One)
+      hidden
+      // default-init: intent: goal: BuildAudio
+      default-init {
+        intent {
+          goal: BuildAudio
+        }
+      }
+    }
+    computed-input (sound) {
+      type (audioPlayer.Result) 
+      compute {
+        intent {
+          goal: audioPlayer.PlayAudio
+          value: $expr(track)
+        }
+      }
+      hidden
+    }
+  }
+  output (TextAudioResult) {
+    evaluate {
+      TextAudioResult("Now playing")
+    }
+  }
+}

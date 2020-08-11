@@ -1,8 +1,11 @@
 capsule-info {
-  display-name (Luck Wizard)
+  display-name (Lock Wizard)
   developer-name (Min (Required))
-  description ("Example of how capsule locks works in different devices. Lock Wizard is less recognizable in ASR, so let it be Luck Wizard.")
-  dispatch-name (Luck Wizard)
+  description ("Example of how capsule locks works in different devices.")
+  dispatch-name (Lock Wizard)
+  dispatch-aliases {
+    alias (luck wizard)
+  }
   // Set your own image for your capsule's icon
   icon-asset (images/icons/icon.png)
   search-keywords {

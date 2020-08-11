@@ -1,6 +1,6 @@
 capsule {
   id (mcvs.lockwizard)
-  version (0.1.5)
+  version (0.2.1)
   format (3)
   targets {
     target (bixby-mobile-en-US)
@@ -9,9 +9,15 @@ capsule {
   }
   runtime-version (7) {
     overrides {
-      // allow-dialogs-on-detail-pages (true)
+      allow-dialogs-on-detail-pages (true)
       no-fallback-dialog-in-views (false)
       // auto-on-click-for-list-of (true)
+    }
+  }
+  capsule-imports {
+    import (bixby.audioPlayer) {
+      version (1.1.29)
+      as (audioPlayer)
     }
   }
   store-countries {
