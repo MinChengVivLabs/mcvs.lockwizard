@@ -1,0 +1,15 @@
+action (CreateStructF) {
+  description (create default video StructF)
+  type (Constructor)
+  collect {
+  }
+  output (StructF) {
+    evaluate {
+      StructF {
+        title {TextName("Bixby Video")}
+        // uri {TextUri("https://bixby-client.aibixby.com/builder/assets/interactive-demo-examples/flower.65dcce6.mp4")}
+        uri {TextUri("_U_xiA8r0mg")}
+      }
+    }
+  }
+}
