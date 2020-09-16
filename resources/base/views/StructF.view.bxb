@@ -1,0 +1,20 @@
+result-view {
+  match: StructF(this) 
+  message: template ("Default video")
+  render {
+    layout {
+      section {
+        title {
+          template ("#{value(this.title)}")
+        }
+        content {
+          video {
+            youtube {
+              video-id ("#{value(this.uri)}")
+            }
+          }
+        }
+      }
+    }
+  }
+}

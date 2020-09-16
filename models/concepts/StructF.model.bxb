@@ -1,0 +1,11 @@
+structure (StructF) {
+  description (used for video)
+  property (title) {
+    type (TextName)
+    min (Required) max (One)
+  }
+  property (uri) {
+    type (TextUri)
+    min (Required) max (One)
+  }
+}
