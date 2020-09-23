@@ -1,4 +1,9 @@
-# Lock Wizard
+# Lock Wizard, version 0.2.3
+
+## Current support device
+1. target (bixby-mobile-en-US)
+2. target (bixby-watch-en-US)
+3. target (bixby-fridge-en-US)
 
 ## StructA is used to test continuation on result view
 1. support single or list times
@@ -28,13 +33,14 @@ It should be ok or recommend to later remove StructB and related view models
 2. utterance "test follow up [double warpper]" 
 
 ## StructE is used for confirmation view test (for lock purpose only)
-1. This is not a complete transcation, although StructE maybe re-used for that purpose later
+1. this is not a complete transcation, although StructE maybe re-used for that purpose later
 2. utterance "test confirmation view" 
 
-## TODO: add a test for basic audio player, 3rd version
-NO need to be fancy, just play a default sound is fine
+## audioPlayer.AudioInfo is used for audio player test 
+1. only plays a default audio track 
+2. code copied from AmazingSleep capsule 
+3. utterance "test audio player" 
 
-## TODO: add a test for basic video player, later version
-
-## TODO: add test transcation, later if required
-
+## StructF is used to for video player test
+1. only load a default youtube tutorial 
+2. utterance "test video player" 
